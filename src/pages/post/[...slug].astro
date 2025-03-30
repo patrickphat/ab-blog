@@ -9,6 +9,7 @@ import { getPosts } from '@/utils'
 import SButton from '@/components/mdx/SButton'
 import Disqus from '@/components/Disqus'
 import { disqusConfig } from '@/data/disqus.config'
+import ServicesCTA from '@/components/ServicesCTA'
 
 const posts = await getCollection('blog')
 export async function getStaticPaths() {
@@ -58,6 +59,9 @@ const disqusEnabled = disqusConfig.enabled
 			<div class='prose prose-lg md:prose-xl dark:prose-invert mb-12 min-w-full'>
 				<Content components={{ pre: Code, SButton }} />
 			</div>
+
+			<!-- Add the CTA component here -->
+			<ServicesCTA />
 
 			<!-- related posts -->
 			<footer>

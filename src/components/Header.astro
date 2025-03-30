@@ -8,8 +8,11 @@ import { SOCIALNETWORKS } from '@/data/links'
 ---
 
 <header class='relative flex items-center h-12 font-semibold'>
-	<a class='text-lg mr-2' href='/'>Alpha Bits</a>
-	<a class='text-lg mr-auto' href='/'>Home</a>
+	<a class='flex items-center mr-auto' href='/'>
+		<img src='/logo-icon.png' alt='Alpha Bits Logo' width='32' height='32' class='mr-2' />
+		<span class='text-lg'>Alpha Bits</span>
+		<span class='ml-2 px-2 py-0.5 text-xs bg-green-600 text-white rounded-full'>Blog</span>
+	</a>
 
 	<div
 		id='astro-header-drawer'
@@ -43,6 +46,24 @@ import { SOCIALNETWORKS } from '@/data/links'
 			<Search />
 		</div>
 		<ToggleTheme />
+		<a
+			href='https://alphabits.team'
+			target='_blank'
+			class='px-3 py-1 bg-green-600 hover:bg-green-700 text-white text-sm rounded-md transition-colors duration-200 flex items-center'
+		>
+			<span>Expert Tech Consulting</span>
+			<svg
+				xmlns='http://www.w3.org/2000/svg'
+				class='h-4 w-4 ml-1'
+				viewBox='0 0 20 20'
+				fill='currentColor'
+			>
+				<path
+					fill-rule='evenodd'
+					d='M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z'
+					clip-rule='evenodd'></path>
+			</svg>
+		</a>
 		<button id='astro-header-drawer-button' type='button' class='md:ml-6 md:hidden'>
 			<MenuIcon />
 			<span class='sr-only'>Show Menu</span>
